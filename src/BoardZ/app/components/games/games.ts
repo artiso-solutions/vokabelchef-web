@@ -5,7 +5,7 @@ import {GameDetailsComponent} from './details';
 import {GameListComponent} from './list';
 
 @Component({
-    selector: 'games',
+    selector: 'chapters',
     directives: [ROUTER_DIRECTIVES],
     templateUrl: 'app/components/games/games.html'
 })

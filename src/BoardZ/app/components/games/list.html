@@ -16,12 +16,12 @@
                     <tbody>
                         <tr>
                             <th>Name</th>
-                            <th>Description</th>
+                            <th>Native Language</th>
 
                         </tr>
-                        <tr *ngFor="#game of games" (click)="openGameDetails(game)" class="respond-click">
-                            <td>{{game.name}}</td>
-                            <td>{{game.description}}</td>
+                        <tr *ngFor="#chapter of chapters" (click)="openGameDetails(chapter)" class="respond-click">
+                            <td>{{chapter.Name}}</td>
+                            <td>{{chapter.NativeLanguage}}</td>
                         </tr>
                     </tbody>
                 </table>

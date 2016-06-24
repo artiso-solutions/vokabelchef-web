@@ -5,6 +5,7 @@ import {NeedsAuthentication} from '../../decorators/needsAuthentication';
 import {Game} from '../../models/game';
 import {GamesService} from '../../services/gamesService';
 import {NotificationService} from '../../services/notificationService';
+import {Chapter} from "../../models/chapter";
 
 @Component({
     selector: 'gamelist',
@@ -13,15 +14,15 @@ import {NotificationService} from '../../services/notificationService';
 })
 @NeedsAuthentication()
 export class GameListComponent implements OnInit {
-    public games: Game[];
+    public chapters: Chapter[];
 
     constructor(private _gamesService: GamesService, 
                 private _router: Router, 
                 private _notificationService: NotificationService) {
     }
 
-    public openGameDetails(game: Game): void {
-        this._router.navigate(['GameDetails', { id: game.id }]);
+    public openGameDetails(chapter: Chapter): void {
+        this._router.navigate(['GameDetails', { id: chapter.Id }]);
     }
 
     public openCreateGame():void{
@@ -31,7 +32,7 @@ export class GameListComponent implements OnInit {
     ngOnInit() {
         this._gamesService.getAll()
             .subscribe(
-                (games)=> this.games = games,
+                (chapters)=> this.chapters = chapters,
                 (err) => this._notificationService.notifyError('Error while fetching game data')
             );
     }
