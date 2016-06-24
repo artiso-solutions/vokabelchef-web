@@ -4,15 +4,10 @@ import {XHRBackend, ConnectionBackend} from 'angular2/http';
 import {AppConfiguration} from '../appConfig';
 import {AuthenticatedHttp} from './authenticatedHttp';
 import {LoginService} from './loginService';
-import {GamesService} from './gamesService';
-import {GeolocationService} from './geolocationService';
-import {PlayersService} from './playersService';
+import {ChaptersService} from './chaptersService';
 import {NotificationService} from './notificationService';
 import {SignalRService} from './signalrService';
 import {UiNotificationService} from './uiNotificationService';
-import {CameraService} from './cameraService';
-import {DesktopCameraService} from './desktopCameraService';
-import {MobileCameraService} from './mobileCameraService';
 import {PlatformInformationService} from './platformInformationService';
 import {NativeIntegrationService} from "./nativeIntegrationService";
 
@@ -25,13 +20,8 @@ export var APP_SERVICES = [
     NativeIntegrationService,
     AuthenticatedHttp,
     LoginService,
-    GamesService,
-    GeolocationService,
-    PlayersService,
+    ChaptersService,
     NotificationService,
-    provide(CameraService, { useClass: 
-        window.cordova ? MobileCameraService : DesktopCameraService 
-    }),
     UiNotificationService,
     SignalRService
 ];

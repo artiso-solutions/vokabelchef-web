@@ -2,13 +2,7 @@
     <div class="col-md-12">
         <div class="box">
             <div class="box-header">
-                <h3 class="box-title">All Games</h3>
-
-                <div class="box-tools">
-                    <button class="btn btn-box-tool" (click)="openCreateGame()"><i class="fa fa-plus"></i> Add new
-                        Game
-                    </button>
-                </div>
+                <h3 class="box-title">Alle Kapitel</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body no-padding">
@@ -16,10 +10,10 @@
                     <tbody>
                         <tr>
                             <th>Name</th>
-                            <th>Native Language</th>
+                            <th>Ursprungssprache</th>
 
                         </tr>
-                        <tr *ngFor="#chapter of chapters" (click)="openGameDetails(chapter)" class="respond-click">
+                        <tr *ngFor="#chapter of chapters" class="respond-click">
                             <td>{{chapter.Name}}</td>
                             <td>{{chapter.NativeLanguage}}</td>
                         </tr>

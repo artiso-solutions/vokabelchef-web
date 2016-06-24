@@ -17,7 +17,7 @@ import {ComponentRef, provide, enableProdMode} from 'angular2/core';
 import {ROUTER_PROVIDERS, LocationStrategy, HashLocationStrategy} from 'angular2/router';
 import {HTTP_PROVIDERS} from 'angular2/http';
 
-import {BoardzAppComponent} from './app';
+import {VokabelChefAppComponent} from './app';
 import {TokenService} from './services/tokenService';
 import {appInjector} from './services/appInjector';
 import {LogService} from './services/logService';
@@ -25,7 +25,7 @@ import 'rxjs/Rx';
 
 enableProdMode();
 
-bootstrap(BoardzAppComponent, [
+bootstrap(VokabelChefAppComponent, [
     HTTP_PROVIDERS,
     ROUTER_PROVIDERS,
     provide(LocationStrategy, { useClass: HashLocationStrategy }),

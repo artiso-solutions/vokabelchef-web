@@ -15,9 +15,8 @@ export class SidebarComponent {
 
     constructor() {
         this.navigationEntries = [];
-        this.navigationEntries.push(new NavigationEntry(['Dashboard'], 'dashboard', 'Dashboard'));
-        this.navigationEntries.push(new NavigationEntry(['Games', 'GameList'], 'list', 'Games'));
-        this.navigationEntries.push(new NavigationEntry(['RadiusSearch'], 'location-arrow', 'Players search'));
+
+        this.navigationEntries.push(new NavigationEntry(['Chapters'], 'list', 'Kapitel'));
     }
 
     toggleSidebar(): void {
