@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="net.tt.boardz.v2" version="0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>BoardZ2</name>
+<widget id="de.artiso.vokabelchef.v1" version="0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>VokabelChef</name>
   <description>
-    Small demo app.
+    VokabelChef
   </description>
-  <author email="office@thinktecture.com" href="http://www.thinktecture.com">
-    Thinktecture AG
+  <author email="office@artiso.de" href="http://www.artiso.de">
+    Artiso GmbH
   </author>
 
   <content src="http://localhost:8000/index.html"/>
@@ -13,8 +13,6 @@
   <plugin name="cordova-plugin-whitelist" version="1.2.1"/>
   <plugin name="cordova-plugin-statusbar" spec="2.1.1"/>
   <plugin name="cordova-plugin-splashscreen" spec="3.2.0"/>
-  <plugin name="cordova-plugin-geolocation" spec="2.1.0"/>
-  <plugin name="cordova-plugin-camera" spec="2.1.0"/>
 
   <platform name="ios">
     <hook type="after_platform_add" src="hooks/ios/after_platform_add_add_plugins.js" />
@@ -50,7 +48,6 @@
   <preference name="SplashScreenBackgroundColor" value="white" />
   <preference name="android-minSdkVersion" value="14" />
   <preference name="android-targetSdkVersion" value="19" />
-  <preference name="xwalkVersion" value="15+"/>
   <preference name="xwalkCommandLine" value="--disable-pull-to-refresh-effect"/>
   <preference name="xwalkMode" value="embedded"/>
   <platform name="ios">

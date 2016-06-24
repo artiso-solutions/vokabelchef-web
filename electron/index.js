@@ -30,7 +30,7 @@ app.on('will-quit', function () {
 
 app.on('ready', function () {
     mainWindow = new BrowserWindow({
-        title: 'BoardZ2',
+        title: 'VokabelChef',
         width: 1024,
         minWidth: 768,
         height: 700,
@@ -56,7 +56,7 @@ app.on('ready', function () {
     ]);
     
     trayApp = new electron.Tray(trayIconPath);
-    trayApp.setToolTip('BoardZ2');
+    trayApp.setToolTip('VokabelChef');
     trayApp.setContextMenu(contextMenu);
 
     globalShortcut.register('CmdOrCtrl+Shift+d', function () {

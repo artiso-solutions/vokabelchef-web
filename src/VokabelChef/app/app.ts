@@ -6,9 +6,6 @@ import {HeaderComponent} from './components/header/header';
 import {APP_SERVICES} from './services/all';
 import {LogService} from './services/logService';
 import {LogLevel} from './models/logLevel';
-import {SignalRService} from './services/signalrService';
-import {LoginService} from './services/loginService';
-import {NotificationService} from './services/notificationService';
 import {UiNotificationService} from './services/uiNotificationService';
 import {NativeIntegrationService} from "./services/nativeIntegrationService";
 import {ChapterListComponent} from "./components/chapters/chapterList";
@@ -23,10 +20,7 @@ import {ChapterListComponent} from "./components/chapters/chapterList";
     { path: '/', component: ChapterListComponent, name: 'Chapters', useAsDefault: true }
 ])
 export class VokabelChefAppComponent implements AfterViewInit {
-    constructor(private _signalRService: SignalRService,
-                private _loginService: LoginService,
-                private _notificationService: NotificationService,
-                private _nativeIntegrationService: NativeIntegrationService,
+    constructor(private _nativeIntegrationService: NativeIntegrationService,
                 private _uiNotificationService: UiNotificationService,
                 private _logService: LogService) {
         _logService.maximumLogLevel = LogLevel.Verbose;
@@ -38,14 +32,6 @@ export class VokabelChefAppComponent implements AfterViewInit {
         if (window.initAdminLTE) {
             window.initAdminLTE();
         }
-
-        if (this._loginService.isAuthenticated) {
-            this._signalRService.start();
-        }
-
-        this._signalRService.someoneJoinedAGame.subscribe(message => {
-            this._notificationService.notifyInformation(message);
-        });
     }
 }
 
