@@ -1,13 +1,16 @@
 import {Injectable} from 'angular2/core';
-import {Headers} from 'angular2/http';
+import {Headers, Http} from 'angular2/http';
 import {Observable} from 'rxjs/Observable';
 
 import {AuthenticatedHttp} from './authenticatedHttp';
 import {Game} from '../models/game';
+import {Chapter} from "../models/chapter";
 
 @Injectable()
 export class GamesService {
-    constructor(private _http: AuthenticatedHttp) {
+    private _apiUrl = "https://vokabelchefapitest.azurewebsites.net/Api/Chapter/";
+
+    constructor(private _http: Http) {
     }
 
     private getRequestOptions() {
@@ -20,8 +23,9 @@ export class GamesService {
         return { headers: headers };
     }
 
-    public getAll(): Observable<Game[]> {
-        return this._http.get('api/boardgames/list').map(response => (<Game[]>response.json()));
+    public getAll(): Observable<Chapter[]> {
+        return this._http.get(this._apiUrl + 'GetChapters?userId=70865d38-9ea9-4b5a-90a9-bf00737832b9')
+            .map(response => (<Chapter[]>response.json()));
     }
 
     public deepClone(game: Game): Game {
