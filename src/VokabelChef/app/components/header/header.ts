@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
     private notifications: Notification[] = [];
 
     public loggedIn: boolean = false;
-    public currentLocation: string = 'BoardZ!';
+    public currentLocation: string = 'VokabelChef!';
 
     constructor(public loginService: LoginService, 
                 private _tokenService: TokenService, 

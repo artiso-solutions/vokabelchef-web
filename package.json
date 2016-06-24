@@ -1,12 +1,8 @@
 {
-  "name": "boardz-xplatform-sample",
+  "name": "vokabelchef-web",
   "version": "1.0.0",
-  "description": "Sample for demonstrating various aspects of modern cross-platform applications.",
+  "description": "",
   "main": "gulpfile.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/thinktecture/boardz-cross-platform-sample.git"
-  },
   "scripts": {
     "gulp": "gulp",
     "typings": "typings",
@@ -15,11 +11,8 @@
     "build": "gulp",
     "watch-ios": "gulp [private-web]:watch:no-liveserver & gulp cordova:watch:ios"
   },
-  "author": "Thinktecture AG <office@thinktecture.com>",
-  "bugs": {
-    "url": "https://github.com/thinktecture/boardz-cross-platform-sample/issues"
-  },
-  "homepage": "https://github.com/thinktecture/boardz-cross-platform-sample#readme",
+  "author": "",
+  "homepage": "",
   "devDependencies": {
     "angular2": "2.0.0-beta.15",
     "bootstrap": "^3.3.6",

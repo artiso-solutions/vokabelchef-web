@@ -36,7 +36,7 @@
                     platform: targetPlatform,
                     arch: 'x64',
                     companyName: 'Thinktecture AG',
-                    linuxExecutableName: 'BoardZ',
+                    linuxExecutableName: 'VokabelChef',
                     darwinIcon: path.join(config.targets.resourcesFolder, 'icon.icns'),
                     winIcon: path.join(config.targets.resourcesFolder, 'icon.ico')
                 }))

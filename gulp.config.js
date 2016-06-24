@@ -3,7 +3,7 @@
 module.exports = {
     systemJsConfig: './system.config.js',
     source: {
-        folder: './src/BoardZ/',
+        folder: './src/VokabelChef/',
         files: {
             injectables: [
                 './dist/www/scripts/es6-shim.min.js',
@@ -16,58 +16,58 @@ module.exports = {
             ],
             electronFiles: './electron/**/*.*',
             cordovaFiles: './cordova/',
-            cordova: './src/BoardZ/cordova.js',
+            cordova: './src/VokabelChef/cordova.js',
             main: [
-                './src/BoardZ/index.html'
+                './src/VokabelChef/index.html'
             ],
-            systemSetupScript: './src/BoardZ/system.setup.js',
+            systemSetupScript: './src/VokabelChef/system.setup.js',
             app: {
-                everything: ['./src/BoardZ/app/**/*', './src/BoardZ/system.setup.js'],
+                everything: ['./src/VokabelChef/app/**/*', './src/VokabelChef/system.setup.js'],
                 ts: [
-                    './src/BoardZ/app/**/*.ts'
+                    './src/VokabelChef/app/**/*.ts'
                 ],
                 html: [
-                    './src/BoardZ/app/**/*.html'
+                    './src/VokabelChef/app/**/*.html'
                 ],
                 css: [
 
-                    './src/BoardZ/css/**/*.css'
+                    './src/VokabelChef/css/**/*.css'
                 ],
                 componentCss: [
-                    './src/BoardZ/app/**/*.css'
+                    './src/VokabelChef/app/**/*.css'
                 ],
                 assets: [
-                    './src/BoardZ/assets/**/*.*'
+                    './src/VokabelChef/assets/**/*.*'
                 ]
             },
             vendorStylesheets: [
-                './src/BoardZ/vendor/bootstrap/css/bootstrap.css',
-                './src/BoardZ/vendor/admin-lte/css/AdminLTE.css',
-                './src/BoardZ/vendor/admin-lte/css/skins/_all-skins.css',
-                './src/BoardZ/vendor/font-awesome/css/font-awesome.css',
-                './src/BoardZ/vendor/pNotify/pnotify.custom.css',
-                './src/BoardZ/vendor/leaflet-js/leaflet.css'
+                './src/VokabelChef/vendor/bootstrap/css/bootstrap.css',
+                './src/VokabelChef/vendor/admin-lte/css/AdminLTE.css',
+                './src/VokabelChef/vendor/admin-lte/css/skins/_all-skins.css',
+                './src/VokabelChef/vendor/font-awesome/css/font-awesome.css',
+                './src/VokabelChef/vendor/pNotify/pnotify.custom.css',
+                './src/VokabelChef/vendor/leaflet-js/leaflet.css'
             ],
             vendorFonts: [
-                './src/BoardZ/vendor/font-awesome/fonts/*.*',
-                './src/BoardZ/vendor/bootstrap/fonts/*.*'
+                './src/VokabelChef/vendor/font-awesome/fonts/*.*',
+                './src/VokabelChef/vendor/bootstrap/fonts/*.*'
             ],
             shim: [
                 './node_modules/es6-shim/es6-shim.min.js',
                 './node_modules/angular2/es6/dev/src/testing/shims_for_IE.js'
             ],
             vendorJs: [
-                './src/BoardZ/vendor/hammerjs/hammer.js',
-                './src/BoardZ/vendor/jquery/jquery-2.1.4.js',
-                './src/BoardZ/vendor/jquery/jquery.hammer.js',
-                './src/BoardZ/vendor/jquery/jquery.slimscroll.js',
-                './src/BoardZ/vendor/pNotify/pnotify-adapter.js',
-                './src/BoardZ/vendor/pNotify/pnotify.custom.js',
-                './src/BoardZ/vendor/signalr/signalr.js',
-                './src/BoardZ/vendor/bootstrap/js/bootstrap.js',
-                './src/BoardZ/vendor/fastclick/fastclick.js',
-                './src/BoardZ/vendor/admin-lte/js/app.js',
-                './src/BoardZ/vendor/leaflet-js/leaflet-src.js'],
+                './src/VokabelChef/vendor/hammerjs/hammer.js',
+                './src/VokabelChef/vendor/jquery/jquery-2.1.4.js',
+                './src/VokabelChef/vendor/jquery/jquery.hammer.js',
+                './src/VokabelChef/vendor/jquery/jquery.slimscroll.js',
+                './src/VokabelChef/vendor/pNotify/pnotify-adapter.js',
+                './src/VokabelChef/vendor/pNotify/pnotify.custom.js',
+                './src/VokabelChef/vendor/signalr/signalr.js',
+                './src/VokabelChef/vendor/bootstrap/js/bootstrap.js',
+                './src/VokabelChef/vendor/fastclick/fastclick.js',
+                './src/VokabelChef/vendor/admin-lte/js/app.js',
+                './src/VokabelChef/vendor/leaflet-js/leaflet-src.js'],
             angular2: [
                 './node_modules/systemjs/dist/system-polyfills.js',
                 './node_modules/angular2/bundles/angular2-polyfills.js',

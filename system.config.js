@@ -1,5 +1,5 @@
 System.config({
-    baseURL: './src/BoardZ/vendor/',
+    baseURL: './src/VokabelChef/vendor/',
     paths: {
         "*": "*.js"
     },
