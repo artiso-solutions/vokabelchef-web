@@ -35,7 +35,7 @@
                     version: '1.2.2',
                     platform: targetPlatform,
                     arch: 'x64',
-                    companyName: 'Thinktecture AG',
+                    companyName: 'artiso',
                     linuxExecutableName: 'VokabelChef',
                     darwinIcon: path.join(config.targets.resourcesFolder, 'icon.icns'),
                     winIcon: path.join(config.targets.resourcesFolder, 'icon.ico')

@@ -1,3 +1,3 @@
 export class AppConfiguration {
-    public apiEndpoint: string = '';
+    public apiEndpoint: string = 'https://vokabelchefapitest.azurewebsites.net/Api/';
 }
